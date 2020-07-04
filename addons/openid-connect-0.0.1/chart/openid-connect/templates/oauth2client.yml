@@ -1,0 +1,11 @@
+apiVersion: hydra.ory.sh/v1alpha1
+kind: OAuth2Client
+metadata:
+  name: {{ template "openid-connect.fullname" . }}
+spec:
+  grantTypes:
+    {{ toYaml .Values.grantTypes | indent 5 }}
+  scope: {{ .Values.scope }}
+  secretName: {{ template "openid-connect.fullname" . }}
+  redirectUris: 
+    {{ toYaml .Values.redirectUris | indent 5 }}

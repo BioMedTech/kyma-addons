@@ -1,0 +1,6 @@
+name: default
+id: 4e1ce8fe-de41-402f-9f66-30c35fae182e
+description: "OpenId Connect default plan"
+displayName: Default
+free: true
+bindable: true

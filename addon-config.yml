@@ -1,0 +1,11 @@
+apiVersion: addons.kyma-project.io/v1alpha1
+kind: ClusterAddonsConfiguration
+metadata:
+  name: custom-addons
+spec:
+  repositories:
+    # Git SSH protocol with the reference to the Secret that contains base64-encoded SSH private key
+    - url: "git::ssh://git@github.com/BioMedTech/kyma-addons.git//index.yaml?sshkey={key}"
+      secretRef:
+        name: github-auth
+        namespace: default

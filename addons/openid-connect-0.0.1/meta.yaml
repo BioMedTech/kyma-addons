@@ -1,0 +1,14 @@
+name: openid-connect
+version: 0.0.1
+id: 308dd6e2-ad87-4cf6-b97f-8948807e3a86
+description: "OpenID Connect addon"
+displayName: "OpenId Connect"
+
+tags: authentication, openidconnect, oauth2
+labels:
+  experimental: "true"
+providerDisplayName: local
+longDescription: "This implementation of OpenIdConnect uses Ory Hydra as a OAuth2 solution and Ory Kratos as a User Identity Management Solution"
+documentationURL: https://www.ory.sh/hydra/docs/implementing-consent
+imageURL: https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOpenID&psig=AOvVaw1MLMTfUCpmX8S54AapoujG&ust=1593807350965000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCICZ3Zmxr-oCFQAAAAAdAAAAABAE
+bindable: true

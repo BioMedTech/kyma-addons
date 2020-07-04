@@ -1,0 +1,1 @@
+OpenIDConnect solution with Ory Hydra as a OAuth2 solution and Ory Kratos as User Identity Management solution
