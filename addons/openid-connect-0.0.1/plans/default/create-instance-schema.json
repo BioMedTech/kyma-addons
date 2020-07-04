@@ -25,5 +25,5 @@
         }
     },
     "type": "object",
-    "required":["redirectUrl", "scope"]
+    "required":["redirectUris", "scope"]
 }
