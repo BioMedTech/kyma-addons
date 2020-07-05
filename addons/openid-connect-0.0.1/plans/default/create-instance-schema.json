@@ -1,25 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "properties": {
-        "redirectUris": {
-            "description": "uris where user can be redirected after oauth2 flow",
-            "title": "Redirect Url",
-            "type": "array",
-            "items": {"type":"string"}
-        },
         "scope":{
             "default":"offline_access openid",
             "type":"string",
             "description": "permission scope of your application. Values are separated by whitespace. Include offline_acces to recieve a refresh token and openid to perfoem an OpenId Connect request",
             "title": "Scope"
-        },
-        "grantTypes":{
-            "type":"array",
-            "description": "grant types ",
-            "title": "Grant Types",
-            "items": {
-                "type": "string"
-            }
         }
     },
     "type": "object",
