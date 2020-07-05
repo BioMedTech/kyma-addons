@@ -9,5 +9,5 @@
         }
     },
     "type": "object",
-    "required":["redirectUris", "scope"]
+    "required":["scope"]
 }
