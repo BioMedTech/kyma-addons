@@ -2,6 +2,6 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-grantTypes: ["authorization_code"]
+grantTypes: ["authorization_code", "refresh_token"]
 scope: "offline_access openid"
-redirectUris: ["https://auth.kyma.local"]
+redirectUris: ["https://hello-world.kyma.local"]
