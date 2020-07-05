@@ -6,6 +6,12 @@
             "type":"string",
             "description": "permission scope of your application. Values are separated by whitespace. Include offline_acces to recieve a refresh token and openid to perfoem an OpenId Connect request",
             "title": "Scope"
+        },
+        "redirectUris":{
+            "type":"array",
+            "items":{"type":"string"},
+            "title":"Redirect Uris",
+            "description":"List of uris, where user can be redirected after OAuth2 flow"
         }
     },
     "type": "object",
