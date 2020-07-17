@@ -4,8 +4,12 @@ metadata:
   name: {{ template "openid-connect.fullname" . }}
 spec:
   grantTypes:
-{{ toYaml .Values.grantTypes | indent 4 }}
+    {{- range .Values.grantTypes }}
+    - {{ . }}
+    {{ end -}}
   scope: {{ .Values.scope }}
   secretName: {{ template "openid-connect.fullname" . }}
   redirectUris:
-{{ toYaml .Values.redirectUris | indent 4 }}
+    {{- range .Values.redirectUris }}
+    - {{ . }}
+    {{ end -}}

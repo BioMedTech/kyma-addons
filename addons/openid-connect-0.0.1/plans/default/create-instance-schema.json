@@ -1,13 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "properties": {
-        "scope":{
-            "default":"offline_access openid",
-            "type":"string",
+        "scope": {
+            "default": "offline_access openid",
+            "type": "string",
             "description": "permission scope of your application. Values are separated by whitespace. Include offline_acces to recieve a refresh token and openid to perfoem an OpenId Connect request",
             "title": "Scope"
+        },
+        "redirectUris": {
+            "default": [
+                "https://auth-gateway.kyma.local"
+            ],
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Uris where to redirect user after login. Leave with default value if you plan to use default function",
+            "title": "Redirect Uris"
+        },
+        "grantTypes": {
+            "default": [
+                "authorization_code",
+                "refresh_token"
+            ],
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Grant types for OAuth2. Leave with default value if you plan to use default function",
+            "title": "Grant Types"
         }
     },
     "type": "object",
-    "required":["scope"]
+    "required": [
+        "scope"
+    ]
 }
